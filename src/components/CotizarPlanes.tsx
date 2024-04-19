@@ -24,8 +24,8 @@ export const CotizarPlanes = () => {
     : null;
   const data_nombre = localStorage.getItem("dataHome");
   const resu_datano = data_nombre ? JSON.parse(data_nombre) : null;
-  console.log(resu_data);
-  console.log(resu_datano);
+  // console.log(resu_data);
+  // console.log(resu_datano);
 
   const [isChecked1, setIsChecked1] = useState(false);
   const [isChecked2, setIsChecked2] = useState(false);
@@ -47,7 +47,7 @@ export const CotizarPlanes = () => {
       checkalguien: !isChecked2,
       plan: plan,
     };
-    console.log(data_resu);
+    // console.log(data_resu);
     localStorage.setItem("data_resu", JSON.stringify(data_resu));
   };
 

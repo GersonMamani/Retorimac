@@ -12,8 +12,8 @@ export const Resumen = () => {
     : null;
   const data_nombre = localStorage.getItem("dataHome");
   const resu_datano = data_nombre ? JSON.parse(data_nombre) : null;
-  console.log(resu_data);
-  console.log(resu_datano);
+  // console.log(resu_data);
+  // console.log(resu_datano);
   const { name, lastName, tele, nume } = resu_datano;
   const { plan, checkmi, checkalguien } = resu_data;
 
@@ -23,12 +23,12 @@ export const Resumen = () => {
     return discountedPrice;
   };
 
-  if (!checkalguien) {
-    console.log("alguien mas true");
-  }
-  if (!checkmi) {
-    console.log("parami true");
-  }
+  // if (!checkalguien) {
+  //   console.log("alguien mas true");
+  // }
+  // if (!checkmi) {
+  //   console.log("parami true");
+  // }
 
   return (
     <>

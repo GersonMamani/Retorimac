@@ -60,7 +60,7 @@ export const HomeSeguro = () => {
       birthDay: user_data.birthDay,
       edad: years,
     };
-    console.log(data);
+    // console.log(data);
 
     localStorage.setItem("dataHome", JSON.stringify(data));
   };

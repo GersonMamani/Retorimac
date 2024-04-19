@@ -5,7 +5,7 @@ import Regre from "../assets/Regre.svg";
 export const BarPlanes = () => {
   const ruta = useLocation();
   const { pathname } = ruta;
-  console.log(pathname);
+  // console.log(pathname);
 
   return (
     <>
