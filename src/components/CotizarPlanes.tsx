@@ -29,7 +29,7 @@ export const CotizarPlanes = () => {
 
   const [isChecked1, setIsChecked1] = useState(false);
   const [isChecked2, setIsChecked2] = useState(false);
-  const [idplan, setidplan] = useState("");
+  // const [idplan, setidplan] = useState("");
 
   const valocheck = (e: any) => {
     const { checked } = e.target;
@@ -40,8 +40,8 @@ export const CotizarPlanes = () => {
     setIsChecked2(checked);
   };
 
-  const enviarre = (plan) => {
-    setidplan(plan);
+  const enviarre = (plan: any) => {
+    // setidplan(plan);
     const data_resu = {
       checkmi: !isChecked1,
       checkalguien: !isChecked2,
