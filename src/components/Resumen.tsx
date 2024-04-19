@@ -17,7 +17,7 @@ export const Resumen = () => {
   const { name, lastName, tele, nume } = resu_datano;
   const { plan, checkmi, checkalguien } = resu_data;
 
-  const Disco = (price) => {
+  const Disco = (price: any) => {
     const discountAmount = (price * 5) / 100;
     const discountedPrice = price - discountAmount;
     return discountedPrice;
