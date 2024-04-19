@@ -18,12 +18,12 @@ import { Planes_datae } from "../Utils/dataPlanes";
 import { useState } from "react";
 
 export const CotizarPlanes = () => {
-  const data_extraidaresumen = localStorage.getItem("data_resu");
-  const resu_data = data_extraidaresumen
-    ? JSON.parse(data_extraidaresumen)
-    : null;
-  const data_nombre = localStorage.getItem("dataHome");
-  const resu_datano = data_nombre ? JSON.parse(data_nombre) : null;
+  // const data_extraidaresumen = localStorage.getItem("data_resu");
+  // const resu_data = data_extraidaresumen
+  //   ? JSON.parse(data_extraidaresumen)
+  //   : null;
+  // const data_nombre = localStorage.getItem("dataHome");
+  // const resu_datano = data_nombre ? JSON.parse(data_nombre) : null;
   // console.log(resu_data);
   // console.log(resu_datano);
 
@@ -148,76 +148,6 @@ export const CotizarPlanes = () => {
           ))}
 
           {/* <div className="borde-cajaplan">
-            <div className="plan-header">
-              <div className="plan-verti">
-                <p className="plan-title">Plan en Casa</p>
-                <span className="tema-titu">COSTO DEL PLAN</span>
-                <span className="precio">$39 al mes</span>
-              </div>
-              <img className="imm" src={Casaplan} />
-            </div>
-            <div>
-              <ul className="lista">
-                <li>
-                  <span>Consulta médica a domicilio</span>
-                  <span> por S/.20 y medicinas cubiertas al 100%.</span>
-                </li>
-                <li>
-                  <span>Videoconsulta y</span>
-                  <span>
-                    orientación telefónica al 100% en medicina general
-                    +pediatría.
-                  </span>
-                </li>
-                <li>
-                  <span>Indemnización de S/.300</span>
-                  <span>caso de hospitalización por más de un día.</span>
-                </li>
-              </ul>
-            </div>
-            <div className="bu-elegirplan">
-              <NavLink className="but-seleplan" to="/resumen">
-                Seleccionar Plan
-              </NavLink>
-            </div>
-          </div> */}
-
-          {/* <div className="borde-cajaplan">
-            <div className="plan-header">
-              <div className="plan-verti">
-                <p className="plan-title">Plan en Casa</p>
-                <span className="tema-titu">COSTO DEL PLAN</span>
-                <span className="precio">$39 al mes</span>
-              </div>
-              <img className="imm" src={Casaplan} />
-            </div>
-            <div>
-              <ul className="lista">
-                <li>
-                  <span>Consulta médica a domicilio</span>
-                  <span> por S/.20 y medicinas cubiertas al 100%.</span>
-                </li>
-                <li>
-                  <span>Videoconsulta y</span>
-                  <span>
-                    orientación telefónica al 100% en medicina general
-                    +pediatría.
-                  </span>
-                </li>
-                <li>
-                  <span>Indemnización de S/.300</span>
-                  <span>caso de hospitalización por más de un día.</span>
-                </li>
-              </ul>
-            </div>
-            <div className="bu-elegirplan">
-              <NavLink className="but-seleplan" to="/resumen">
-                Seleccionar Plan
-              </NavLink>
-            </div>
-          </div>
-
-          <div className="borde-cajaplan">
             <div className="plan-header">
               <div className="plan-verti">
                 <p className="plan-title">Plan en Casa</p>
